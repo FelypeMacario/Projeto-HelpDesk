@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Help Ritmo</title>
+</head>
+<body>
+    <!--INICIO HEADER-->
+    <div id="container">
+        <header>
+            <nav>
+                <a href="#">HelpRitmo</a>
+            </nav>
+        </header>
+        <div id="img-logo"> 
+            <img src="assets/Chevrolet-Logo.png" alt="Logo da Concessionária Chevrolet">
+        </div>
+    </div> 
+    <!--FIM HEADER-->
+    <!--INICIO MAIN-->
+    <div id="main">
+        <main>
+            <h1>Bem Vindo ao, <br>
+                <strong>HelpRitmo</strong></h1>
+        </main>
+    </div>
+    <form id="cadastro-form">  
+        <div class="form-field">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-field">
+            <input type="password" id="password" name="password" placeholder="Crie sua Senha" required>
+        </div>
+        <div class="form-field">
+            <input type="text" id="name" name="name" placeholder="Digite Seu Nome" required>
+        </div>
+        <div class="form-field">
+            <input type="text" id="setor" name="setor" placeholder="Qual seu Setor" required>
+        </div>
+        <div class="form-field">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+    <nav class="cadastro">
+        <p>Tem uma conta? <a href="index.html">Conecte-se</a></p>
+    </nav>
+
+    
+    <script>
+        document.getElementById('cadastro-form').addEventListener('submit', function(event) {
+            event.preventDefault();  
+            window.location.href = 'index.html';  
+        });
+    </script>
+</body>
+</html>

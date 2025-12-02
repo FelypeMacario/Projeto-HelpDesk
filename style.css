@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 30px; 
+}
+
+#container a {
+    text-decoration: none;
+    font-family: "Roboto";
+    color: white;
+    font-size: 1.2em;
+}
+
+#img-logo {
+    display: flex;
+}
+
+#img-logo img {
+    max-height: 70px;
+    width: auto;
+}
+ 
+#main main {
+    text-align: center;
+    padding: 50px 0; 
+}
+
+#main {
+    width: 100%; 
+}
+
+#main main h1 {
+    font-size: 3em; 
+    line-height: 1.2; 
+    font-family: "Roboto";
+}
+
+
+.form-field {
+    display: flex;
+    justify-content: center;
+    padding: 10px;  
+    align-items: center;
+}
+
+.form-field input {
+    width: 300px;  
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;  
+    font-family: "Roboto";
+    font-size: 1em;
+}
+
+.form-field button {
+    width: 300px;  
+    padding: 10px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: "Roboto";
+    font-size: 1em;
+    cursor: pointer;
+}
+.form-field button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.form-field button:hover {
+    background-color: #0056b3; 
+}
+.cadastro {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cadastro a {
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+}
+
+header {
+    padding: 20px;
+    background-color: #0056b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#container-init h1 {
+    color: white;
+    margin: 0;
+}
+
+header img {
+    width: 100px; 
+    height: auto;
+}
+
+#container-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.form-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.form-main form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .form-field input,
+    .form-field button {
+        width: 250px;  
+    }
+    #main main h1 {
+        font-size: 2em;
+    }
+}
